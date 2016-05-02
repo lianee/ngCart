@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "0.10"
+before_install:
+  - export PHANTOMJS_BIN=/home/travis/build/lianee/ngCart/node_modules/karma-phantomjs2-launcher/node_modules/phantomjs2-ext/lib/phantom/bin/phantomjs
 before_script:
   - npm install -g bower
   - bower install
