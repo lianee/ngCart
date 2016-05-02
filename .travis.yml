@@ -8,9 +8,4 @@ before_install:
   - export PATH=$PWD/travis-phantomjs:$PATH
   - export PHANTOMJS2_VERSION="2.0.0"
 before_script:
-  - npm install -g bower
-  - bower install
   - npm install -g grunt-cli
-script:
-  - grunt test
-  - grunt build
